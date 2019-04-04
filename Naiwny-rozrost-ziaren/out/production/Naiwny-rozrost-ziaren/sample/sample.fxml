@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.canvas.Canvas?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="900.0" style="-fx-background-color: whitesmoke;" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <Canvas fx:id="canvas_id" height="700.0" width="700.0" />
+      <TextField fx:id="size_id" layoutX="776.0" layoutY="65.0" prefHeight="25.0" prefWidth="87.0" text="100" />
+      <TextField fx:id="grainNumber_id" layoutX="776.0" layoutY="131.0" prefHeight="25.0" prefWidth="87.0" text="25" />
+  
+      <ComboBox fx:id="comboNgbh_id" layoutX="720.0" layoutY="205.0" prefHeight="25.0" prefWidth="150.0" />
+      <ComboBox fx:id="comboSowingGrains_id" layoutX="720.0" layoutY="272.0" prefWidth="150.0" />
+      <Text layoutX="718.0" layoutY="40.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Podaj rozmiar planszy (x = y):" wrappingWidth="139.3359375">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <Text layoutX="719.0" layoutY="121.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Podaj ilość ziaren: ">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <Text layoutX="719.0" layoutY="200.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Wybór sąsiedztwa:">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <Text layoutX="720.0" layoutY="267.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Wybór sposobu zasiewania:">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <Text layoutX="720.0" layoutY="428.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Akcje:">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <CheckBox fx:id="checkPeriodical_id" layoutX="719.0" layoutY="342.0" mnemonicParsing="false" text="Periodyczne" />
+      <CheckBox fx:id="showMesh_id" layoutX="719.0" layoutY="439.0" mnemonicParsing="false" text="Pokaż siatkę" />
+      <CheckBox fx:id="checkInteraction_id" layoutX="719.0" layoutY="459.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="69.0" text="Iteracje:" />
+      <Text layoutX="720.0" layoutY="339.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Warunki brzegowe:">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <TextField fx:id="generationField_id" layoutX="815.0" layoutY="455.0" prefHeight="0.0" prefWidth="36.0" text="1" />
+      <Button fx:id="drawBtton_id" layoutX="720.0" layoutY="497.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="150.0" style="-fx-background-color: lightblue;" text="RYSUJ SIATKĘ" />
+      <Button fx:id="grainMakerButton_id" layoutX="718.0" layoutY="549.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="150.0" style="-fx-background-color: lightblue;" text="TWÓRZ ZIARNA" />
+      <Button fx:id="startButton_id" layoutX="718.0" layoutY="605.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="150.0" style="-fx-background-color: lightblue;" text="START (ROZROST)" />
+   </children>
+</AnchorPane>
